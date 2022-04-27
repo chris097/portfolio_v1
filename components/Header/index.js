@@ -8,7 +8,6 @@ import navs from "../Nav";
 const Header = () => {
 
   const [active, setActive] = useState(1);
-  console.log(active);
 
   return(
     <header className="h-20 border">
@@ -20,9 +19,9 @@ const Header = () => {
             <nav className="mr-20">
               <div className="flex space-x-10">
                 {navs?.map((nav, index) => (
-                  <nav onClick={() => setActive(nav.id)} key={index} className={active === index+1 ? "text-primaryred" : "text-black"}>
+                  <nav onClick={() => setActive(nav.id)} key={index}>
                     <Link href={nav.url}>
-                      <a>{nav.tag}</a>
+                      <a className={active === index+1 ? "text-primaryred" : "text-black"}>{nav.tag}</a>
                     </Link>
                 </nav>
                 ))}

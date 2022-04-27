@@ -5,8 +5,8 @@ import Link from 'next/link';
 import Circle1 from "../public/circle1.png";
 import Circle2 from "../public/circle2.png";
 import Rainbow from "../public/rainbow.png";
-import {FaFacebookF, FaTwitter, FaLinkedinIn, FaGithubAlt} from "react-icons/fa";
 import Header from '../components/Header';
+import socialNavs from '../components/Nav/socialNavs';
 
 export default function Home() {
   return (
@@ -36,26 +36,13 @@ export default function Home() {
             <h1 className="text-7xl my-4">{`I'm Christian Chiemela`}</h1>
             <h4 className="text-2xl font-light mt-6">a frontend engineer, specialist in javascript.</h4>
             <div className="flex justify-center space-x-7 mt-10">
-              <Link href="https://www.facebook.com/christian.chiemela.95">
-                <span className="bg-coreblue cursor-pointer rounded-full p-2">
-                  <FaFacebookF />  
-                </span>
-              </Link>
-              <Link href="https://twitter.com/chris_chiemela">
-                <span className="bg-coreblue cursor-pointer rounded-full p-2">
-                    <FaTwitter />
-                </span>
-              </Link>
-              <Link href="https://www.linkedin.com/in/christian-chiemela-b8881619a/">
-                <span className="bg-coreblue cursor-pointer rounded-full p-2">
-                    <FaLinkedinIn />
-                </span>
-              </Link>
-              <Link href="https://github.com/chris097">
-                <span className="bg-coreblue cursor-pointer rounded-full p-2">
-                    <FaGithubAlt />
-                </span>
-              </Link>
+              {socialNavs?.map((socialNav, index) => (
+                <Link key={index} href={socialNav.url}>
+                  <span className="bg-coreblue cursor-pointer rounded-full p-2">
+                    {socialNav.icon} 
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
           <div className="flex flex-row-reverse mt-10">

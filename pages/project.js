@@ -1,6 +1,13 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/Header";
+import Image from "next/image";
+import circle1 from "../public/circle1.png";
+import circle2 from "../public/circle2.png";
+import covid from "../public/covid.png";
+import socialNavs from "../components/Nav/socialNavs";
+import Link from "next/link";
+import Footer from "../components/Footer";
 
 export default function Project () {
     return(
@@ -14,11 +21,57 @@ export default function Project () {
             <Header />
             {/*  */}
             <main>
-                <div>Body</div>
+                <div className="h-12 w-12">
+                    <Image src={circle1} alt="circle" />
+                </div>
+                <div className="text-center font-metamorphous mt-32">
+                    <h4 className="text-3xl">Hello world,</h4>
+                    <h1 className="text-7xl my-4">{`I'm Christian Chiemela`}</h1>
+                    <h4 className="text-2xl font-light mt-6">a frontend engineer, specialist in javascript.</h4>
+                    <div className="flex justify-center space-x-7 mt-10">
+                    {socialNavs?.map((socialNav, index) => (
+                        <Link key={index} href={socialNav.url}>
+                        <span className="bg-coreblue cursor-pointer rounded-full p-2">
+                            {socialNav.icon} 
+                        </span>
+                        </Link>
+                    ))}
+                    </div>
+                </div>
+                <div className="flex flex-row-reverse">
+                    <div className="h-12 w-12 mt-4">
+                    <Image src={circle2} alt="circle" />
+                    </div>
+                </div>
+                <div className="max-w-[90%] mx-auto mt-32 font-metamorphous">
+                    <h1 className="text-7xl font-light mb-16">Recent Projects</h1>
+                    <div className="flex items-center">
+                        <div className="w-500px h-auto">
+                            <Image src={covid} alt="project" />
+                        </div>
+                        <div className="ml-20">
+                            <h1 className="text-4xl">Cov19Strain Application</h1>
+                            <p className="w-600px mt-10">
+                                Covid-19 tracker is an application that help you keep tracks of covid-19 situation locality and even beyond your locality. This application will teach/guide you to prevent yourself from been infected.
+                            </p>
+                            <div className="flex space-x-6 mt-8 text-sm">
+                                <div className="bg-primaryblue items-center flex justify-center text-white w-28 py-3">Reactjs</div>
+                                <div className="bg-corered items-center flex justify-center text-white w-28 py-3">CSS</div>
+                                <div className="bg-coreyellow items-center flex justify-center text-white w-28 py-3">Netlify</div>
+                                <div className="bg-coreyellow items-center flex justify-center text-white w-28 py-3">Github Link</div>
+                            </div>
+                            <button className="bg-corered rounded-full w-20 h-20 text-white mt-16">
+                                <Link href="https://cov9teen.netlify.app/" type="submit">
+                                    <a>View</a>
+                                </Link>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </main>
             {/*  */}
             <footer>
-                <div>Footer</div>
+                <Footer />
             </footer>
         </div>
     )
