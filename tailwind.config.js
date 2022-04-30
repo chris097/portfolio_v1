@@ -12,9 +12,12 @@ module.exports = {
         primaryblue: "#2B33E3",
         corered: "#FF6B6B",
         coreyellow: "#EFA434",
+        secondaryblue: "#151D3B",
       },
       fontFamily:{
         'metamorphous':['Metamorphous', 'cursive'],
+        'roboto':['Roboto', 'sans-serif'],
+        'poppins':['Poppins', 'sans-serif'],
       },
       width:{
         "600px": "600px"
