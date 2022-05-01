@@ -40,10 +40,10 @@ export default function Hire () {
                     <div className="mt-10 bg-white w-full h-auto pt-10 pb-20 font-poppins">
                         <div className="max-w-[80%] mx-auto">
                             <h1 className="text-2xl">Dear <span className="text-corered">Recruiter</span>,</h1>
-                            <p className="text-sm mt-3 text-gray-600">Please fill the form, will respones with 24hours.</p>
+                            <p className="text-sm mt-3 text-gray-600">Please fill the form, will respones with 24 hours.</p>
                             <form className="space-y-5">
                                 <div className="mt-8">
-                                    <label className="text-sm">{`Recruiter's Name`}</label>
+                                    <label className="text-sm mb-10">{`Recruiter's Name`}</label>
                                     <input className="border border-gray-200 w-full h-14 rounded outline-none focus:border-inherit px-3 text-sm" type="text" />
                                 </div>
                                 <div>
@@ -62,7 +62,7 @@ export default function Hire () {
                                     <label className="text-sm">{`Description`} </label>
                                     <textarea className="border border-gray-200 w-full h-40 rounded outline-none focus:border-inherit p-3" />
                                 </div>
-                                <button className="bg-corered outline-none focus:outline-none text-white mt-5 w-full py-3 rounded">Send</button>
+                                <button className="bg-corered border-none text-white mt-5 w-full py-3 rounded">Send</button>
                             </form>
                         </div>
                     </div>

@@ -34,7 +34,7 @@ export default function Project () {
                         Am always a <span className="text-corered">ReactJs</span> fan.
                     </h4>
                     <div className=" space-x-7 mt-5">
-                    <button className="bg-corered outline-none focus:outline-none text-white py-2 px-6 rounded">Hire Me</button>
+                    <button className="bg-corered border-none text-white py-2 px-6 rounded">Hire Me</button>
                     </div>
                 </div>
                 <div className="flex flex-row-reverse">
@@ -59,7 +59,7 @@ export default function Project () {
                                 <div className="bg-coreyellow items-center flex justify-center text-white w-28 py-3">Netlify</div>
                                 <div className="bg-secondaryblue items-center flex justify-center text-white w-28 py-3">Github Link</div>
                             </div>
-                            <button className="bg-corered focus:outline-none outline-none rounded-full w-20 h-20 text-white mt-16">
+                            <button className="bg-corered border-none rounded-full w-20 h-20 text-white mt-16">
                                 <Link href="https://cov9teen.netlify.app/" type="submit">
                                     <a>View</a>
                                 </Link>
@@ -81,7 +81,7 @@ export default function Project () {
                                 <div className="bg-coreyellow items-center flex justify-center text-white w-28 py-3">Netlify</div>
                                 <div className="bg-secondaryblue items-center flex justify-center text-white w-28 py-3">Github Link</div>
                             </div>
-                            <button className="bg-corered focus:outline-none outline-none rounded-full w-20 h-20 text-white mt-16">
+                            <button className="bg-corered border-none rounded-full w-20 h-20 text-white mt-16">
                                 <Link href="https://doghubbs.netlify.app/" type="submit">
                                     <a>View</a>
                                 </Link>
@@ -103,7 +103,7 @@ export default function Project () {
                                 <div className="bg-coreyellow items-center flex justify-center text-white w-28 py-3">Netlify</div>
                                 <div className="bg-secondaryblue items-center flex justify-center text-white w-28 py-3">Github Link</div>
                             </div>
-                            <button className="bg-corered rounded-full outline-none focus:outline-none w-20 h-20 text-white mt-16">
+                            <button className="bg-corered rounded-full border-none w-20 h-20 text-white mt-16">
                                 <Link href="https://wordstore.netlify.app/" type="submit">
                                     <a>View</a>
                                 </Link>

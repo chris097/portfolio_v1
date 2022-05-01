@@ -26,7 +26,7 @@ const Header = () => {
             <button
               type="button"
               aria-hidden="true"
-              className="relative focus:outline-none outline-none"
+              className="relative focus:outline-none outline-none border-none"
               data-testid="theme-button"
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             >
