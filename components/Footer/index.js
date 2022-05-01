@@ -8,12 +8,12 @@ import Link from "next/link";
 
 
 const Footer = () => (
-    <div className="border-t pt-10 mt-28">
-        <div className="max-w-[90%] mx-auto flex justify-between font-metamorphous mb-10">
+    <div className="border-t bg-white pt-10 mt-28">
+        <div className="max-w-[90%] mx-auto flex justify-between font-poppins mb-10">
             <div>
                 <div className="flex items-center">
                     <Image src={Logo} alt="logo" />
-                    <span className="font-bold -ml-4">Christian Chiemela</span>
+                    <span className="font-bold font-metamorphous -ml-4">Christian Chiemela</span>
                 </div>
                 <div className="flex items-center space-x-2 -mt-3">
                     <span><BsTelephoneFill /></span>

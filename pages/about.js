@@ -1,6 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/Header";
+import Image from "next/image";
+import circle1 from "../public/circle1.png";
+import circle2 from "../public/circle2.png";
+import Footer from "../components/Footer";
+import {courses, hobbies, stacks, versions} from "../components/Stack";
+import {FaDotCircle} from "react-icons/fa";
 
 export default function About () {
     return(
@@ -14,11 +20,80 @@ export default function About () {
             <Header />
             {/*  */}
             <main>
-                About page
+                <div className="h-12 w-12 pt-20">
+                    <Image src={circle1} alt="circle" />
+                </div>
+                <div className="max-w-[80%] mx-auto font-metamorphous mt-32">
+                    <h4 className="text-3xl font-poppins">Hello Recruiter,</h4>
+                    <h1 className="text-7xl font-poppins mt-6">My Journey in Tech Community</h1>
+                    <h4 className="text-xl w-85% font-poppins font-light mt-6">
+                        If you are here I strong believe we will be working closely or together as team soon.
+                        Keep scrolling let me talk you through my journey so far.
+                    </h4>
+                    <div className=" space-x-7 mt-5">
+                    <button className="bg-corered text-white py-2 px-6 rounded">Hire Me</button>
+                    </div>
+                </div>
+                <div className="flex flex-row-reverse">
+                    <div className="h-12 w-12 mt-4">
+                    <Image src={circle2} alt="circle" />
+                    </div>
+                </div>
+                <div className="max-w-[80%] mx-auto mt-32 font-metamorphous">
+                    <h1 className="text-7xl font-light mb-10">About Me</h1>
+                    <div className="mt-10 bg-white w-full h-auto py-10 font-poppins">
+                        <div className="max-w-[80%] mx-auto">
+                            <h1 className="text-2xl">Hello Recruiter,</h1>
+                            <p className="mt-5">
+                                I am Christian Chiemela a frontend engineer specialized in Javascript based in Lagos, Nigeria also a Manchester United Fan. 
+                                I have been in the tech community 3+ years now with 2+ years experience in production working with javascript library
+                                such as <span className="text-corered">ReactJS.</span>
+                            </p>
+                            <p className="mt-3">
+                                My Journey as a Frontend engineer was not a smooth and plan one alot of challenges
+                            </p>
+                            <p className="mt-3">
+                                In my years of experience I have worked with international and local companies creating an impressive record and impact.
+                                Working closely with the UI/UX devs and Backend devs, keeping good relationship and communicating with the entire team.
+                                As a frontend engineer my sole priority is to implement the User Interface (UI), endpoint integration. Bring the UI prototype 
+                                to reality.  
+                            </p>
+                            <h4 className="mt-5 mb-3 font-bold">Stacks that I am familiar with:</h4>
+                            {stacks.map((stack, index) => (
+                                <p key={index} className="mt-2 flex items-center space-x-2">
+                                    <span><FaDotCircle color="FF6B6B" /></span>
+                                    <span>{stack}</span>
+                                </p>
+                            ))}
+                            <h4 className="mt-5 mb-3 font-bold">{`Version Control & Deployment that I am familiar with:`}</h4>
+                            {versions.map((version, index) => (
+                                <p key={index} className="mt-2 flex items-center space-x-2">
+                                    <span><FaDotCircle color="FF6B6B" /></span>
+                                    <span>{version}</span>
+                                </p>
+                            ))}
+                            <h4 className="mt-5 mb-3 font-bold">Stacks that I am currently learning:</h4>
+                            {courses.map((course, index) => (
+                                <p key={index} className="mt-2 flex items-center space-x-2">
+                                    <span><FaDotCircle color="FF6B6B" /></span>
+                                    <span>{course}</span>
+                                </p>
+                            ))}
+                            <h4 className="mt-5 mb-3 font-bold">My Hobbies:</h4>
+                            {hobbies.map((hobs, index) => (
+                                <p key={index} className="mt-2 flex items-center space-x-2">
+                                    <span><FaDotCircle color="FF6B6B" /></span>
+                                    <span>{hobs}</span>
+                                </p>
+                            ))}
+                            <h4 className="mt-5 mb-3 font-bold">Why I choose Tech:</h4>
+                        </div>
+                    </div>
+                </div>
             </main>
             {/*  */}
             <footer>
-                About footer
+                <Footer />
             </footer>
       </div>
     )
