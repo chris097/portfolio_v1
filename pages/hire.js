@@ -44,15 +44,15 @@ export default function Hire () {
                             <form className="space-y-5">
                                 <div className="mt-8">
                                     <label className="text-sm">{`Recruiter's Name`}</label>
-                                    <input className="border w-full h-10 rounded outline-none focus:border-inherit px-3 text-sm" type="text" />
+                                    <input className="border border-gray-200 w-full h-14 rounded outline-none focus:border-inherit px-3 text-sm" type="text" />
                                 </div>
                                 <div>
                                     <label className="text-sm">{`Company's Name`} </label>
-                                    <input className="border w-full h-10 rounded outline-none focus:border-inherit px-3 text-sm" type="text" />
+                                    <input className="border border-gray-200 w-full h-14 rounded outline-none focus:border-inherit px-3 text-sm" type="text" />
                                 </div>
                                 <div>
                                     <label className="text-sm">{`Job Type`} </label>
-                                    <select className="border w-full h-10 rounded outline-none focus:border-inherit px-3 text-sm">
+                                    <select className="border w-full h-14 rounded outline-none focus:border-inherit border-gray-200 px-3 text-sm">
                                         <option value="contract">Contract</option>
                                         <option value="partTime">Part-Time</option>
                                         <option value="contract">Full-Time</option>
@@ -60,9 +60,9 @@ export default function Hire () {
                                 </div>
                                 <div>
                                     <label className="text-sm">{`Description`} </label>
-                                    <textarea className="border w-full h-32 rounded outline-none focus:border-inherit p-3" />
+                                    <textarea className="border border-gray-200 w-full h-40 rounded outline-none focus:border-inherit p-3" />
                                 </div>
-                                <button className="bg-corered text-white mt-5 w-full py-3 rounded">Send</button>
+                                <button className="bg-corered outline-none focus:outline-none text-white mt-5 w-full py-3 rounded">Send</button>
                             </form>
                         </div>
                     </div>

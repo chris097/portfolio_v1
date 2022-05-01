@@ -31,7 +31,7 @@ export default function About () {
                         Keep scrolling let me talk you through my journey so far.
                     </h4>
                     <div className=" space-x-7 mt-5">
-                    <button className="bg-corered text-white py-2 px-6 rounded">Hire Me</button>
+                    <button className="bg-corered text-white py-2 px-6 outline-none focus:outline-none rounded">Hire Me</button>
                     </div>
                 </div>
                 <div className="flex flex-row-reverse">
