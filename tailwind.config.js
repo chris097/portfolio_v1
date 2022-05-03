@@ -14,6 +14,7 @@ module.exports = {
         corered: "#FF6B6B",
         coreyellow: "#EFA434",
         secondaryblue: "#151D3B",
+        coredark: "#151D3B"
       },
       fontFamily:{
         'metamorphous':['Metamorphous', 'cursive'],
