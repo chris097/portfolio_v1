@@ -37,22 +37,22 @@ export default function Hire () {
                 {/*  */}
                 <div className="max-w-[80%] mx-auto mt-32 font-metamorphous">
                     <h1 className="text-7xl font-light mb-10">Hire Me</h1>
-                    <div className="mt-10 bg-white w-full h-auto pt-10 pb-20 font-poppins">
+                    <div className="mt-10 bg-white dark:bg-projectblue w-full h-auto pt-10 pb-20 font-poppins">
                         <div className="max-w-[80%] mx-auto">
                             <h1 className="text-2xl">Dear <span className="text-corered">Recruiter</span>,</h1>
-                            <p className="text-sm mt-3 text-gray-600">Please fill the form, will respones with 24 hours.</p>
+                            <p className="text-sm mt-3 text-gray-600 dark:text-gray-200">Please fill the form, will respones with 24 hours.</p>
                             <form className="space-y-5">
                                 <div className="mt-8">
                                     <label className="text-sm mb-10">{`Recruiter's Name`}</label>
-                                    <input className="border border-gray-200 w-full h-14 rounded outline-none focus:border-inherit px-3 text-sm" type="text" />
+                                    <input className="border bg-gray-100 dark:bg-gray-900 w-full h-14 rounded outline-none border-none px-3 text-sm" type="text" />
                                 </div>
                                 <div>
                                     <label className="text-sm">{`Company's Name`} </label>
-                                    <input className="border border-gray-200 w-full h-14 rounded outline-none focus:border-inherit px-3 text-sm" type="text" />
+                                    <input className="border bg-gray-100 w-full dark:bg-gray-900 h-14 rounded outline-none border-none px-3 text-sm" type="text" />
                                 </div>
                                 <div>
                                     <label className="text-sm">{`Job Type`} </label>
-                                    <select className="border w-full h-14 rounded outline-none focus:border-inherit border-gray-200 px-3 text-sm">
+                                    <select className="border w-full h-14 rounded dark:bg-gray-900 outline-none border-none bg-gray-100 px-3 text-sm">
                                         <option value="contract">Contract</option>
                                         <option value="partTime">Part-Time</option>
                                         <option value="contract">Full-Time</option>
@@ -60,9 +60,9 @@ export default function Hire () {
                                 </div>
                                 <div>
                                     <label className="text-sm">{`Description`} </label>
-                                    <textarea className="border border-gray-200 w-full h-40 rounded outline-none focus:border-inherit p-3" />
+                                    <textarea className="border-none w-full dark:bg-gray-900 bg-gray-100 h-40 rounded outline-none focus:border-inherit p-3" />
                                 </div>
-                                <button className="bg-corered border-none text-white mt-5 w-full py-3 rounded">Send</button>
+                                <button className="bg-corered dark:bg-coreblue border-none text-white mt-5 w-full py-3 rounded">Send</button>
                             </form>
                         </div>
                     </div>

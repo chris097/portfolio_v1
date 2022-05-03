@@ -41,7 +41,7 @@ export default function About () {
                 </div>
                 <div className="max-w-[80%] mx-auto mt-32 font-metamorphous">
                     <h1 className="text-7xl font-light mb-10">About Me</h1>
-                    <div className="mt-10 bg-white w-full h-auto py-10 font-poppins">
+                    <div className="mt-10 bg-white dark:bg-projectblue w-full h-auto py-10 font-poppins">
                         <div className="max-w-[80%] mx-auto">
                             <h1 className="text-2xl">Hello Recruiter,</h1>
                             <p className="mt-5">

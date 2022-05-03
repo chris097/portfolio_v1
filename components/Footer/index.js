@@ -8,8 +8,8 @@ import Link from "next/link";
 
 
 const Footer = () => (
-    <div className="border-t bg-white pt-10 mt-28">
-        <div className="max-w-[90%] mx-auto flex justify-between font-poppins mb-10">
+    <div className="border-t border-gray-200 bg-white dark:bg-darkblue pt-10 mt-28">
+        <div className="max-w-[90%] mx-auto flex justify-between font-poppins pb-10">
             <div>
                 <div className="flex items-center">
                     <Image src={Logo} alt="logo" />

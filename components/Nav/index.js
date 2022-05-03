@@ -1,5 +1,5 @@
 import React from "react";
-import {GrProjects} from "react-icons/gr";
+import {CgMenuGridR} from "react-icons/cg";
 import {FaBookmark,FaBook} from "react-icons/fa";
 import {RiCodeSSlashFill} from "react-icons/ri";
 
@@ -8,7 +8,7 @@ const navs = [
         id: 1, 
         name: "My Projects", 
         url: "/project", 
-        icon: <GrProjects /> 
+        icon: <CgMenuGridR className="text-xl" /> 
     },
     {
         id: 2, 

@@ -3,6 +3,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 // import Link from "next/link";
 import Logo from "../../public/logo.svg";
+import darkLogo from "../../public/darkLogo.svg";
 import {CgMenuGridR} from "react-icons/cg";
 import {BsMoonStarsFill} from "react-icons/bs";
 import {MdWbSunny} from "react-icons/md";
@@ -24,11 +25,11 @@ const Header = () => {
   if(!mounted) return null;
 
   return(
-    <header className="h-20 w-full fixed left-0 z-50 bg-white dark:bg-coredark border-b">
+    <header className="h-20 w-full fixed left-0 z-50 bg-white dark:bg-coredark border-b border-gray-200">
         <div className="flex justify-between items-center max-w-[90%] mx-auto h-full">
           <div className="flex items-center">
             <Link href="/">
-              <a><Image src={Logo} alt="logo" /></a>
+              <a>{theme === 'dark' ? <Image src={darkLogo} alt="logo" /> : <Image src={Logo} alt="logo" />}</a>
             </Link>
           </div>
           <div className="flex items-center space-x-3">
@@ -37,16 +38,16 @@ const Header = () => {
               aria-hidden="true"
               className="relative focus:outline-none outline-none border-none"
               data-testid="theme-button"
-              // onClick={() => setTheme(systemTheme === 'dark' ? 'light':'dark')}
+              onClick={() => setTheme(theme === 'dark' ? 'light':'dark')}
             >
-            <div className="w-12 h-6 transition dark:bg-red-100 bg-gray-200 rounded-full outline-none dark:bg-yepprimary" />
+            <div className="w-12 h-6 transition dark:bg-blue-200 bg-red-100 rounded-full outline-none dark:bg-yepprimary" />
             <div
               className={`absolute top-0 left-0 inline-flex items-center justify-center w-6 h-6 transition-all duration-150 transform scale-110 rounded-full shadow-sm translate-x-0 -translate-y-px bg-white text-yepprimary ${theme === 'light' ? 'translate-x-0 -translate-y-px  bg-white text-yepprimary' : 'translate-x-6 text-blue-100 bg-kiwi2'}`}>
         
         {currentTheme === 'dark' ? (
-          <span><MdWbSunny onClick={() => setTheme('light')} color="#FF6B6B" /></span>
+          <span><MdWbSunny onClick={() => setTheme('light')} color="#2B33E3" /></span>
         ) : (
-          <span><BsMoonStarsFill onClick={() => setTheme('dark')} color="#182039" /></span>
+          <span><BsMoonStarsFill onClick={() => setTheme('dark')} color="#FF6B6B" /></span>
         )}
          
       </div>
