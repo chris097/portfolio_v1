@@ -8,7 +8,7 @@ import Link from "next/link";
 
 
 const Footer = () => (
-    <div className="border-t border-gray-200 bg-white dark:bg-darkblue pt-10 mt-28">
+    <div className="border-t-2 border-gray-200 dark:border-gray-400 bg-white dark:bg-darkblue pt-10 mt-28">
         <div className="max-w-[90%] mx-auto flex justify-between font-poppins pb-10">
             <div>
                 <div className="flex items-center">

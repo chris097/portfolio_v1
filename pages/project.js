@@ -9,6 +9,7 @@ import dogApp from "../public/dogApp.png";
 import wordlen from "../public/wordlen.png";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import { FiExternalLink } from "react-icons/fi";
 
 export default function Project () {
     return(
@@ -57,13 +58,18 @@ export default function Project () {
                                 <div className="bg-primaryblue items-center flex justify-center text-white w-28 py-3">Reactjs</div>
                                 <div className="bg-corered items-center flex justify-center text-white w-28 py-3">CSS</div>
                                 <div className="bg-coreyellow items-center flex justify-center text-white w-28 py-3">Netlify</div>
-                                <div className="bg-secondaryblue items-center flex justify-center text-white w-28 py-3">Github Link</div>
+                                <div className="bg-secondaryblue items-center flex justify-center text-white w-28 py-3">Github</div>
                             </div>
-                            <button className="bg-corered border-none rounded-full w-20 h-20 text-white mt-16">
-                                <Link href="https://cov9teen.netlify.app/" type="submit">
-                                    <a>View</a>
+                            <div className="flex justify-between items-center">
+                                <button className="bg-corered border-none rounded-full w-20 h-20 text-white mt-16">
+                                    <Link href="https://cov9teen.netlify.app/" type="submit">
+                                        <a>View</a>
+                                    </Link>
+                                </button>
+                                <Link href="/">
+                                    <a> <FiExternalLink className="text-2xl cursor-pointer mr-10" /></a>
                                 </Link>
-                            </button>
+                            </div>
                         </div>
                     </div>
                     <div className="flex items-center flex-row-reverse mb-20">
@@ -81,11 +87,16 @@ export default function Project () {
                                 <div className="bg-coreyellow items-center flex justify-center text-white w-28 py-3">Netlify</div>
                                 <div className="bg-secondaryblue items-center flex justify-center text-white w-28 py-3">Github Link</div>
                             </div>
-                            <button className="bg-corered border-none rounded-full w-20 h-20 text-white mt-16">
-                                <Link href="https://doghubbs.netlify.app/" type="submit">
-                                    <a>View</a>
+                            <div className="flex justify-between items-center">
+                                <button className="bg-corered border-none rounded-full w-20 h-20 text-white mt-16">
+                                    <Link href="https://cov9teen.netlify.app/" type="submit">
+                                        <a>View</a>
+                                    </Link>
+                                </button>
+                                <Link href="/">
+                                    <a> <FiExternalLink className="text-2xl cursor-pointer mr-10" /></a>
                                 </Link>
-                            </button>
+                            </div>
                         </div>
                     </div>
                     <div className="flex items-center mb-20">
@@ -101,13 +112,18 @@ export default function Project () {
                                 <div className="bg-primaryblue items-center flex justify-center text-white w-28 py-3">Reactjs</div>
                                 <div className="bg-corered items-center flex justify-center text-white w-28 py-3">CSS</div>
                                 <div className="bg-coreyellow items-center flex justify-center text-white w-28 py-3">Netlify</div>
-                                <div className="bg-secondaryblue items-center flex justify-center text-white w-28 py-3">Github Link</div>
+                                <div className="bg-secondaryblue items-center flex justify-center text-white w-28 py-3">Github</div>
                             </div>
-                            <button className="bg-corered rounded-full border-none w-20 h-20 text-white mt-16">
-                                <Link href="https://wordstore.netlify.app/" type="submit">
-                                    <a>View</a>
+                            <div className="flex justify-between items-center">
+                                <button className="bg-corered border-none rounded-full w-20 h-20 text-white mt-16">
+                                    <Link href="https://cov9teen.netlify.app/" type="submit">
+                                        <a>View</a>
+                                    </Link>
+                                </button>
+                                <Link href="/">
+                                    <a> <FiExternalLink className="text-2xl cursor-pointer mr-10" /></a>
                                 </Link>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
