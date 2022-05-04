@@ -92,7 +92,7 @@ export default function About () {
                 </div>
             </main>
             {/*  */}
-            <footer>
+            <footer className="border-t border-gray-200 bg-white dark:bg-darkblue pt-10 mt-28">
                 <Footer />
             </footer>
       </div>

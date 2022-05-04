@@ -25,7 +25,7 @@ export default function Hire () {
                     <h4 className="text-3xl font-poppins">Hello Recruiter,</h4>
                     <h1 className="text-7xl font-poppins mt-6">Good frontend dev tastes good</h1>
                     <h4 className="text-xl w-85% font-poppins font-light mt-6">
-                        If you are here I strong believe we will be working closely or together as team soon.
+                        If you are here I strongly believe we will be working closely or together as team soon.
                         Keep scrolling let me talk you through my journey so far.
                     </h4>
                 </div>
@@ -83,7 +83,7 @@ export default function Hire () {
                 </div>
             </main>
             {/*  */}
-            <footer>
+            <footer className="border-t border-gray-200 bg-white dark:bg-darkblue pt-10 mt-28">
                 <Footer />
             </footer>
       </div>
