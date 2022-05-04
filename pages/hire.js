@@ -44,23 +44,37 @@ export default function Hire () {
                             <form className="space-y-5">
                                 <div className="mt-8">
                                     <label className="text-sm mb-10">{`Recruiter's Name`}</label>
-                                    <input className="border bg-gray-100 dark:bg-gray-900 w-full h-14 rounded outline-none border-none px-3 text-sm" type="text" />
+                                    <div className="bg-gray-100 w-full rounded dark:bg-gray-900 h-14">
+                                        <input 
+                                            className="w-full h-full bg-transparent outline-none border-none px-3 text-sm" 
+                                            type="text" 
+                                        />
+                                    </div>
                                 </div>
                                 <div>
                                     <label className="text-sm">{`Company's Name`} </label>
-                                    <input className="border bg-gray-100 w-full dark:bg-gray-900 h-14 rounded outline-none border-none px-3 text-sm" type="text" />
+                                    <div className="bg-gray-100 w-full rounded dark:bg-gray-900 h-14">
+                                        <input 
+                                            className="w-full h-full bg-transparent outline-none border-none px-3 text-sm" 
+                                            type="text" 
+                                        />
+                                    </div>
                                 </div>
                                 <div>
                                     <label className="text-sm">{`Job Type`} </label>
-                                    <select className="border w-full h-14 rounded dark:bg-gray-900 outline-none border-none bg-gray-100 px-3 text-sm">
-                                        <option value="contract">Contract</option>
-                                        <option value="partTime">Part-Time</option>
-                                        <option value="contract">Full-Time</option>
-                                    </select>
+                                    <div className="bg-gray-100 w-full rounded dark:bg-gray-900 h-14">
+                                        <select className="border-none w-full bg-transparent outline-none px-3 h-full text-sm">
+                                            <option value="contract">Contract</option>
+                                            <option value="partTime">Part-Time</option>
+                                            <option value="contract">Full-Time</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div>
                                     <label className="text-sm">{`Description`} </label>
-                                    <textarea className="border-none w-full dark:bg-gray-900 bg-gray-100 h-40 rounded outline-none focus:border-inherit p-3" />
+                                    <div className="w-full h-40 rounded dark:bg-gray-900 bg-gray-100">
+                                        <textarea className="border-none w-full outline-none bg-transparent focus:border-inherit p-3" />
+                                    </div>
                                 </div>
                                 <button className="bg-corered dark:bg-coreblue border-none text-white mt-5 w-full py-3 rounded">Send</button>
                             </form>
