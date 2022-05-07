@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "jspdf": "^2.5.1",
     "next": "12.1.5",
     "next-themes": "^0.1.1",
     "react": "18.0.0",
+    "react-awesome-reveal": "^3.8.1",
     "react-dom": "18.0.0",
     "react-icons": "^4.3.1"
   },

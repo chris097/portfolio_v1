@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Image from "next/image";
 import circle1 from "../public/circle1.png";
 import circle2 from "../public/circle2.png";
+import { Slide } from "react-awesome-reveal";
 
 export default function Hire () {
     return(
@@ -18,25 +19,34 @@ export default function Hire () {
             <Header />
             {/*  */}
             <main>
-            <div className="h-12 w-12 pt-20">
+            <div className="md:h-12 md:w-12 w-8 h-8 pt-20">
                     <Image src={circle1} alt="circle" />
                 </div>
                 <div className="max-w-[80%] mx-auto font-metamorphous mt-32">
-                    <h4 className="text-3xl font-poppins">Hello Recruiter,</h4>
-                    <h1 className="text-7xl font-poppins mt-6">Good frontend dev tastes good</h1>
-                    <h4 className="text-xl w-85% font-poppins font-light mt-6">
-                        If you are here I strongly believe we will be working closely or together as team soon.
-                        Keep scrolling let me talk you through my journey so far.
-                    </h4>
+                    <Slide direction="up">
+                        <h4 className="text-3xl font-poppins">Hello Recruiter,</h4>
+                    </Slide>
+                    <Slide direction="down">
+                        <h1 className="md:text-7xl text-5xl font-poppins mt-6">Good frontend dev tastes good</h1>
+                    </Slide>
+                    <Slide>
+                        <h4 className="md:text-xl text-md w-85% font-poppins font-light mt-6">
+                            If you are here I strongly believe we will be working closely or together as team soon.
+                            Keep scrolling let me talk you through my journey so far.
+                        </h4>
+                    </Slide>
                 </div>
                 <div className="flex flex-row-reverse">
-                    <div className="h-12 w-12 mt-4">
+                    <div className="md:h-12 md:w-12 w-8 h-8 mt-4">
                     <Image src={circle2} alt="circle" />
                     </div>
                 </div>
                 {/*  */}
                 <div className="max-w-[80%] mx-auto mt-32 font-metamorphous">
-                    <h1 className="text-7xl font-light mb-10">Hire Me</h1>
+                    <Slide direction="up">
+                        <h1 className="md:text-7xl text-5xl font-light mb-10">Hire Me</h1>
+                    </Slide>
+                    <Slide>
                     <div className="mt-10 bg-white dark:bg-projectblue w-full h-auto pt-10 pb-20 font-poppins">
                         <div className="max-w-[80%] mx-auto">
                             <h1 className="text-2xl">Dear <span className="text-corered">Recruiter</span>,</h1>
@@ -80,6 +90,7 @@ export default function Hire () {
                             </form>
                         </div>
                     </div>
+                    </Slide>
                 </div>
             </main>
             {/*  */}

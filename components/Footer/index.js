@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Footer = () => (
     <div className="">
-        <div className="max-w-[90%] mx-auto flex justify-between font-poppins pb-10">
+        <div className="max-w-[90%] mx-auto md:flex justify-between font-poppins pb-10">
             <div>
                 <div className="flex items-center">
                     <Image src={Logo} alt="logo" />
@@ -25,7 +25,7 @@ const Footer = () => (
                 </div>
             </div>
             <div className="space-y-11">
-                <div className="flex flex-row-reverse mt-10">
+                <div className="flex md:flex-row-reverse mt-10">
                     {socialNavs?.map((socialNav, index) => (
                         <Link key={index} href={socialNav.url}>
                         <span className="bg-coreblue cursor-pointer mr-7 rounded-full p-2">

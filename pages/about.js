@@ -7,6 +7,7 @@ import circle2 from "../public/circle2.png";
 import Footer from "../components/Footer";
 import {courses, hobbies, stacks, versions} from "../components/Stack";
 import {FaDotCircle} from "react-icons/fa";
+import { Slide } from "react-awesome-reveal";
 
 export default function About () {
     return(
@@ -20,27 +21,38 @@ export default function About () {
             <Header />
             {/*  */}
             <main>
-                <div className="h-12 w-12 pt-20">
+                <div className="md:h-12 md:w-12 w-8 h-8 pt-20">
                     <Image src={circle1} alt="circle" />
                 </div>
                 <div className="max-w-[80%] mx-auto font-metamorphous mt-32">
-                    <h4 className="text-3xl font-poppins">Hello Recruiter,</h4>
-                    <h1 className="text-7xl font-poppins mt-6">My Journey in Tech Community</h1>
-                    <h4 className="text-xl w-85% font-poppins font-light mt-6">
-                        If you are here I strong believe we will be working closely or together as team soon.
-                        Keep scrolling let me talk you through my journey so far.
-                    </h4>
+                    <Slide direction="up">
+                        <h4 className="text-3xl font-poppins">Hello Recruiter,</h4>
+                    </Slide>
+                    <Slide direction="down">
+                        <h1 className="md:text-7xl text-5xl font-poppins mt-6">My Journey in Tech Community</h1>
+                    </Slide>
+                    <Slide>
+                        <h4 className="md:text-xl text-md w-85% font-poppins font-light mt-6">
+                            If you are here I strong believe we will be working closely or together as team soon.
+                            Keep scrolling let me talk you through my journey so far.
+                        </h4>
+                    </Slide>
                     <div className=" space-x-7 mt-5">
-                    <button className="bg-corered text-white py-2 px-6 border-none rounded">Hire Me</button>
+                        <Slide direction="up">
+                            <button className="bg-corered text-white py-2 px-6 border-none rounded">Hire Me</button>
+                        </Slide>
                     </div>
                 </div>
                 <div className="flex flex-row-reverse">
-                    <div className="h-12 w-12 mt-4">
+                    <div className="md:h-12 md:w-12 w-8 h-8 mt-4">
                     <Image src={circle2} alt="circle" />
                     </div>
                 </div>
                 <div className="max-w-[80%] mx-auto mt-32 font-metamorphous">
-                    <h1 className="text-7xl font-light mb-10">About Me</h1>
+                    <Slide direction="up">
+                        <h1 className="md:text-7xl text-5xl font-light mb-10">About Me</h1>
+                    </Slide>
+                    <Slide direction="left">
                     <div className="mt-10 bg-white dark:bg-projectblue w-full h-auto py-10 font-poppins">
                         <div className="max-w-[80%] mx-auto">
                             <h1 className="text-2xl">Hello Recruiter,</h1>
@@ -89,6 +101,7 @@ export default function About () {
                             <h4 className="mt-5 mb-3 font-bold">Why I choose Tech:</h4>
                         </div>
                     </div>
+                    </Slide>
                 </div>
             </main>
             {/*  */}

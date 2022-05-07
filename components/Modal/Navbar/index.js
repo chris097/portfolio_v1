@@ -6,7 +6,7 @@ import navs from "../../Nav";
 const Navbar = () => {
     return(
         <div className="flex flex-row-reverse font-poppins text-sm">
-            <div className="w-44 h-auto bg-white dark:bg-coreblue shadow-sm mr-6 rounded py-4">
+            <div className="w-44 h-auto bg-white dark:bg-projectblue shadow-sm mr-6 rounded py-4">
                 <div className="flex justify-center align-baseline content-center">
                     <div className="space-y-1 w-full">
                         {navs.map((nav, index) => (
