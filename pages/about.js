@@ -62,9 +62,6 @@ export default function About () {
                                 such as <span className="text-corered">ReactJS.</span>
                             </p>
                             <p className="mt-3">
-                                My Journey as a Frontend engineer was not a smooth and plan one alot of challenges
-                            </p>
-                            <p className="mt-3">
                                 In my years of experience I have worked with international and local companies creating an impressive record and impact.
                                 Working closely with the UI/UX devs and Backend devs, keeping good relationship and communicating with the entire team.
                                 As a frontend engineer my sole priority is to implement the User Interface (UI), endpoint integration. Bring the UI prototype 

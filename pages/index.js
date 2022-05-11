@@ -43,8 +43,8 @@ export default function Home() {
               <Slide>
                 <h4 className="md:text-xl mx-auto md:mx-0 text-md font-light mt-6 w-85%">
                   a frontend engineer, specialist in javascript. Love Building amazing things with 
-                <span className="text-corered font-metamorphous">ReactJs</span> and 
-                <span className="text-corered font-metamorphous">Typescript</span>.
+                <span className="text-corered font-metamorphous"> ReactJs</span> and 
+                <span className="text-corered font-metamorphous"> Typescript</span>.
                 </h4>
               </Slide>
              <Slide direction='down'>
