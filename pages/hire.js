@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import Head from "next/head";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
@@ -7,7 +9,26 @@ import circle1 from "../public/circle1.png";
 import circle2 from "../public/circle2.png";
 import { Slide } from "react-awesome-reveal";
 
-export default function Hire () {
+export default function Hire() {
+    const [isLoading, setIsLoading] = useState(false);
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setIsLoading(true)
+        emailjs.sendForm(
+          'service_njtm33w',
+          'template_kprhxgk',
+          form.current,
+          'AwNHYReSSkev1SzVK'
+      )
+        .then((result) => {
+        toast.success(`${result.text}! Message sent successfully. Thank you for coming this far.`)
+        setIsLoading(false)
+      }, (error) => {
+          console.log(error.text);
+        });
+  };
     return(
         <div>
             <Head>
@@ -47,17 +68,19 @@ export default function Hire () {
                         <h1 className="md:text-7xl text-5xl font-light mb-10">Hire Me</h1>
                     </Slide>
                     <Slide>
-                    <div className="mt-10 bg-white dark:bg-projectblue w-full h-auto pt-10 pb-20 font-poppins">
+                        <div className="mt-10 bg-white dark:bg-projectblue w-full h-auto pt-10 pb-20 font-poppins">
                         <div className="max-w-[80%] mx-auto">
                             <h1 className="text-2xl">Dear <span className="text-corered">Recruiter</span>,</h1>
                             <p className="text-sm mt-3 text-gray-600 dark:text-gray-200">Please fill the form, will respones with 24 hours.</p>
-                            <form className="space-y-5">
+                            <form ref={form} onSubmit={sendEmail} className="space-y-5">
                                 <div className="mt-8">
                                     <label className="text-sm mb-10">{`Recruiter's Name`}</label>
                                     <div className="bg-gray-100 w-full rounded dark:bg-gray-900 h-14">
                                         <input 
                                             className="w-full h-full bg-transparent outline-none border-none px-3 text-sm" 
-                                            type="text" 
+                                            type="text"
+                                            name="name"
+                                            required    
                                         />
                                     </div>
                                 </div>
@@ -66,27 +89,32 @@ export default function Hire () {
                                     <div className="bg-gray-100 w-full rounded dark:bg-gray-900 h-14">
                                         <input 
                                             className="w-full h-full bg-transparent outline-none border-none px-3 text-sm" 
-                                            type="text" 
+                                            type="text"
+                                            name="company_name" 
+                                            required    
                                         />
                                     </div>
                                 </div>
                                 <div>
-                                    <label className="text-sm">{`Job Type`} </label>
+                                    <label className="text-sm">{`Email Address`} </label>
                                     <div className="bg-gray-100 w-full rounded dark:bg-gray-900 h-14">
-                                        <select className="border-none w-full bg-transparent outline-none px-3 h-full text-sm">
-                                            <option value="contract">Contract</option>
-                                            <option value="partTime">Part-Time</option>
-                                            <option value="contract">Full-Time</option>
-                                        </select>
+                                        <input 
+                                            className="w-full h-full bg-transparent outline-none border-none px-3 text-sm" 
+                                            type="email"
+                                            name="company_email" 
+                                            required    
+                                        />
                                     </div>
                                 </div>
                                 <div>
                                     <label className="text-sm">{`Description`} </label>
                                     <div className="w-full h-40 rounded dark:bg-gray-900 bg-gray-100">
-                                        <textarea className="border-none w-full outline-none bg-transparent focus:border-inherit p-3" />
+                                        <textarea name="company_description" className="border-none w-full outline-none bg-transparent focus:border-inherit p-3" />
                                     </div>
                                 </div>
-                                <button className="bg-corered dark:bg-coreblue border-none text-white mt-5 w-full py-3 rounded">Send</button>
+                                    <button type="submit" className="bg-corered dark:bg-coreblue border-none text-white mt-5 w-full py-3 rounded">
+                                        {isLoading ? "Loading..." : "Send"}
+                                    </button>
                             </form>
                         </div>
                     </div>
